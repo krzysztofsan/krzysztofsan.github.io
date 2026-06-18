@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,900,900i&display=swap" rel="stylesheet">
+		
+		<link href="https://ncposts.b-cdn.net/ncposts-8.0.1-beta.min.css" rel="stylesheet" id="lc-css-link" />
+		<link href="https://livecenter-test-02.azurewebsites.net/LiveCenter/ExtensionCss/krzysztof" rel="stylesheet" />
+	</head>
+	<body class="lc-frame lc-default-theme" style="overflow-y: unset;">
+
+		<div class="lc-feed-container">
+
+			<div id="master-container"></div>
+
+			<div style="text-align: center">
+			<button class="lc-load-more" id="lc-load-more">Load more</button>
+			</div>
+
+		</div>
+
+		<script src="https://ncposts.b-cdn.net/ncposts-8.0.1-beta.min.js"></script>
+		<script src="https://livecenter-test-02.azurewebsites.net/LiveCenter/ExtensionJs/krzysztof"></script>
+
+		<script type="text/javascript">
+			NcPosts.start({
+				channelId: "806",
+				channelGuid: "46beaf57-38e3-4bbb-82f2-c833d866359a",
+				tenantKey: "krzysztof",
+				tenantDomain: "eu-test-2",
+				container: document.getElementById("master-container"),
+				extensionContainer: window.NcLiveCenterExtensions,
+				showMoreElement: document.getElementById("lc-load-more"),
+				baseUrl: "https://lc2-public-api-v1-test-02-swap.azurewebsites.net/",
+				wsBaseUrl: "wss://lc2-public-api-v1-test-02.azurewebsites.net/",
+			});
+		</script>
+	</body>
+</html>
